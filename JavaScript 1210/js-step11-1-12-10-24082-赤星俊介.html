@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function hantei() {
+            let item = document.getElementById("seiseki").value;
+            // alert(item * 1 + 100)
+
+            if (item < 44) {
+                alert("grade 1: 不可")
+
+            } else if (item < 50) {
+                alert("grade 2:可")
+
+            } else if (item < 80) {
+                alert("grade 3:")
+
+            } else if (item < 90) {
+                alert("grade 4:")
+                
+            } else {
+                alert("grade 5:")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>成績を判定する</h1>
+    <iabel>成績を半角で入力してください。</iabel>
+    <input type="text" id="seiseki">
+    <button onclick="hantei()">判定します。</button>
+</body>
+
+</html>

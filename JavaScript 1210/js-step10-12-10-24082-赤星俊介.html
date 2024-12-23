@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        var count = 0;
+        function foo() {
+            count++;
+            alert("count" + count);
+
+            if (1 == count) {
+                alert("ヒント：東北地方にある県です（北海道ではありません）")
+            } else {
+                alert("正解：岩手県です")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>(問題)</h1>
+    <p>日本で最も大きい“県”はどこでしょうか？</p>
+
+    <button onclick="foo()">
+        答えを見る
+    </button>
+
+    <p>
+        ※ボタンを1回クリックすると、ヒントが表示されます。<br>
+        ※ボタンを2回以上クリックすると、答えが表示されます。
+    </p>
+</body>
+
+</html>
