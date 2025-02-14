@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        header {
+            height: 10vh;
+            width: 100%;
+            background-color: aqua;
+        }
+
+        nav {
+            height: 80vh;
+            width: 30%;
+            background-color: blanchedalmond;
+        }
+
+        /* nav div{  
+            display: flex;
+            flex-direction: column;
+         } */
+        main {
+            height: 80vh;
+            width: 70%;
+            background-color: blueviolet;
+        }
+
+        footer {
+            height: 10vh;
+            width: 100%;
+            background-color: red;
+        }
+
+        #sec1 {
+            background-color: lightpink;
+            /* display: none; */
+        }
+
+        #sec2 {
+            background-color: red;
+            display: none;
+        }
+
+        #sec3 {
+            display: none;
+        }
+    </style>
+    <script>
+        function section1womiseru() {
+            var item1 = document.getElementById("sec1");
+            item1.style.display = "block";
+            var item2 = document.getElementById("sec2");
+            item2.style. display = "none";
+            var item3 = document.getElementById("sec3");
+            item3.style. display = "none";
+        }
+        function section2womiseru() {
+            var item1 = document.getElementById("sec1");
+            item1.style.display = "none";
+            var item2 = document.getElementById("sec2");
+            item2.style. display = "block";
+            var item3 = document.getElementById("sec3");
+            item3.style. display = "none";
+        }
+        function section3womiseru() {
+            var item1 = document.getElementById("sec1");
+            item1.style.display = "none";
+            var item2 = document.getElementById("sec2");
+            item2.style.display = "none";
+            var item3 = document.getElementById("sec3");
+            item3.style. display = "block";
+        }
+
+    </script>
+</head>
+
+<body>
+    <header>header</header>
+    <nav>
+        nav
+        <div>
+            <button onclick="section1womiseru()">#sec1を表示</button>
+            <button onclick="section2womiseru()">#sec2を表示</button>
+            <button onclick="section3womiseru()">#sec3を表示</button>
+        </div>
+
+    </nav>
+    <main>
+        main
+        <section id="sec1">
+            <h1>201教室</h1>
+            <p>webクリエイター学科のクラスです。コースの中、にはwebクリエイターコースeスポーツが混合クラスになってます。</p>
+        </section>
+
+        <section id="sec2">
+            <h1>202教室</h1>
+        </section>
+
+        <section id="sec3">
+            <h1>203教室</h1>
+        </section>
+
+    </main>
+    <footer>footer</footer>
+</body>
+
+</html>
