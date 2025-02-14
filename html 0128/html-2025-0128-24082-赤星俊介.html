@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div,span{
+            border: 1px gray solid;
+            /* height: 50px; */
+            width: 50px;
+        }
+        .ib{
+            display: inline-block;
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            display: flex;
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            align-items: center;
+            justify-content: space-around;
+        }
+        .item{
+            width: 160px;
+            height: 160px;
+        }
+        .container2{
+            display: flex;
+            width: 600px;
+            height: 200px;
+        }
+        .container2 > div{
+            width: 90px;
+        }
+        .item24{
+            order: 1;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>div要素はブロック要素</h1>
+    <div>赤</div>
+    <div>星</div>
+    <div>俊</div>
+    <div>介</div>
+    <P>
+        ブロック要素はレイアウト要素で、何もしなければ、横100%のサイズで伸縮する。ふつうは、横幅、縦の高さを設定してならべる。
+    </P>
+    <h1>inline要素について</h1>
+    <span>赤</span>
+    <span>星</span>
+    <span>俊</span>
+    <span>介</span>
+    <p>
+        インライン要素は、レイアウトの為の要素にならないため、width,heihgt等のプロパティに反応しない。文字を横書きで並べるようなイメージ。
+        samp、pタグなどいくつかの要素がこのカテゴリになる<br>
+        解決方法1は、ブロック要素のdivで囲む<br>
+        解決方法2は、inline-block要素に変更する等はある。<br>
+        display: inline-block;を使用する
+    </p>
+    <h2>div要素を使った解決</h2>
+    <div><span>赤</span></div>
+    <div><span>星</span></div>
+    <div><span>俊</span></div>
+    <div><span>介</span></div>
+
+    <h2>inline-block要素を使った解決</h2>
+    <span class="ib">赤</span>
+    <span class="ib">星</span>
+    <span class="ib">俊</span>
+    <span class="ib">介</span>
+    <p>
+        インライン要素をブロック要素として扱う指定に、inline-block指定がある。
+        <br>
+        セレクタ{
+            display: inline-block;
+        }
+        のように記述する。
+        
+        メリットは、divタグのように多重のカプセル化が不要なことでコードの可読性が向上する。
+    </p>
+
+    <h2>flexbox縦の位置を決める</h2>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+    <h2>flexbox -&gt; order (子要素での設定)</h2>
+    <div class="container2">
+        <div class="item21">No.1</div>
+        <div class="item22">No.2</div>
+        <div class="item23">No.3</div>
+        <div class="item24">No.4</div>
+        <div class="item25">No.5</div>
+        <div class="item26">No.6</div>
+    </div>
+
+</body>
+</html>
