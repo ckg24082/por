@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* border: 1px grey solid; */
+            box-sizing: border-box;
+        }
+
+        #container1 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #container1>div {
+            width: 25%;
+        }
+
+        body {
+            width: 100%;
+        }
+
+        #container2 > div{
+            width: 33%;
+        }
+
+        #container2{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #container3 > div{
+            background-color: beige ; margin: 5px;
+        }
+
+        #container3{
+            display: flex;
+            background-color: cadetblue;
+            justify-content: space-between;
+        }
+
+        #container4{
+            display: flex;
+            background-color: antiquewhite;
+            height: 100px;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        #container4 > div{
+            background-color: aquamarine;
+            margin: 5px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>container1</h1>
+    <div id="container1">
+        <div>No.1</div>
+        <div>No.2</div>
+        <div>No.3</div>
+        <div>No.4</div>
+    </div>
+    <hr>
+
+    <h1>container2</h1>
+    <div id="container2">
+        <div>No.1</div>
+        <div>No.2</div>
+        <div>No.3</div>
+        <div>No.4</div>
+    </div>
+
+    <h1>container3</h1>
+    <div id="container3">
+        <div>No.1</div>
+        <div>No.2</div>
+        <div>No.3</div>
+        <div>No.4</div>
+    </div>
+
+    <h1>container4</h1>
+    <div id="container4">
+        <div>No.1</div>
+        <div>No.2</div>
+        <div>No.3</div>
+        <div>No.4</div>
+    </div>
+</body>
+
+</html>
