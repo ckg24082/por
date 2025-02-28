@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function hanteiScore() {
+            var score;
+            score = prompt("seiseki wo irete kudasai:", 0)
+            score = score * 1;
+            if (score < 0 || 100 < score) {
+                alert("不正入力です");
+                return;
+            }
+
+            if (90 <= score) {
+                alert("grade A");
+                return;
+            }
+
+            if (80 <= score && score < 90) {
+                alert("grade B");
+                return;
+            }
+
+            if (50 <= score && score < 79) {
+                alert("grade C");
+                return;
+            }
+
+            if (44 <= score && score < 49) {
+                alert("grade D");
+                return;
+            }
+
+            if (score < 44) {
+                alert("grade E");
+            }
+        }
+    </script>
+    <script src="24082-0121-js"></script>
+</head>
+
+<body>
+    <button onclick="stringInputPrint()">
+        prompt()の初期値あり
+    </button>
+
+    <hr>
+    <button onclick="hanteiScore()">
+        得点の判定
+    </button>
+
+</body>
+
+</html>

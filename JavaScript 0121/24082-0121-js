@@ -1,0 +1,12 @@
+
+function stringInputPrint() {
+
+    var inStr;
+
+    inStr = prompt("Enter number: " , "初期値");
+
+    alert("your input is:" + inStr);
+
+}
+
+// stringInputPrint();

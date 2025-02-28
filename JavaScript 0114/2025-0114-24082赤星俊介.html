@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>break文</h1>
+    <p>
+        breakは途中で中断する命令。この命令があるとき、繰り返しは止まる。
+        プログラムは、繰り返しの次の部分から動く<br>
+        if文と組み合わせることで、中断のタイミングをコントロールできる
+    </p>
+    <script>
+        for (i = 1; i <= 5; i = i + 1) {
+            document.write("No." + i + "<br>");
+            if (i > 3) {
+                break;
+            }
+        }
+        document.write("program end")
+    </script>
+
+    <h1>continue文</h1>
+    <p>
+        この命令が出てきたら、繰り返しの内容がスキップされて
+        次の繰り返しが実行されるようになる。
+        if文と組み合わせて使用される
+    </p>
+    <script>
+        for (i = 1; i <= 5; i++) {
+            document.write("No." + i);
+            continue;
+            document.write("<br>");
+        }
+        document.write("program end")
+    </script>
+    <h1>while文</h1>
+    <p>
+        whileは条件式が
+    </p>
+    <script>
+        var i = 1;
+        var j = 1;
+        while (i <= 5) {
+            document.write("[" + i + "]");
+            i = i + 1;
+        }
+    </script>
+    <h1>演習</h1>
+    <p>2から96までのうち、2と3の公倍数を求める</p>
+    <script>
+        var num =1;
+        while(num<=96){
+            num++;
+            if((num%2==0) &&(num%3==0)){
+                document.write("["+num+"]");
+            }
+            
+        }
+    </script>
+</body>
+
+</html>

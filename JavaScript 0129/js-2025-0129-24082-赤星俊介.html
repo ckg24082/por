@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function foo() {
+            window.document.bgColor = "#FF0000";
+        }
+        function bar() {
+            window.document.body.style.backgroundColor = "#0000FF";
+        }
+        function resetScreen() {
+            window.document.bgColor = "ffffff";
+        }
+        function openGoogle() {
+            winID = window.open("http://www.google.co.jp");
+        }
+        function myResize() {
+            window.resizeTo(300, 400);
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="foo()">背景を赤にする</button>
+    <button onclick="bar()">背景を青にする</button>
+    <button onclick="resetScreen()">画面をもとの白に戻す</button>
+    <hr>
+    <h1>window.open()を使う</h1>
+    <button onclick="openGoogle()">Googleを開く</button>
+    <h2 onclick="openGoogle()">見出しだけど、クリックされればGoogleが開く</h2>
+    <hr>
+    <button onclick="myResize()">リサイズ</button>
+</body>
+
+</html>

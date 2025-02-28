@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function hidePart(){
+            var item = document.getElementById("hidePart")
+            item.style.display = "none";
+        }
+    </script>
+    <script src="24082-0122.js"></script>
+</head>
+<body>
+    <h1>locationオブジェクトの使い方</h1>
+    <button onclick="enshu1()">
+        locationオブジェクトを使う
+    </button>
+    <button onclick="enshu2()">
+        UREを表示する
+    </button>
+    <hr>
+
+    <h1>historyオブジェクトを使う</h1>
+    <button onclick="back1()">
+        1つ前に戻る
+    </button>
+    <button onclick="back2()">
+        2つ前に戻る
+    </button>
+    <hr>
+
+    <div id="hidePart">
+        <h1>属性値を書き換える</h1>
+        <button onclick="hidePart()">
+            ここをクリックすると一部が消えます。
+        </button>
+    </div>
+</body>
+</html>
